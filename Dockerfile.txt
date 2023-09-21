@@ -1,5 +1,5 @@
 FROM openjdk:11
-EXPOSE 9090
+EXPOSE 8761
 ADD target/EurekaServerDocker.jar EurekaServerDocker.jar
 ENTRYPOINT ["java","-jar","/EurekaServerDocker.jar"]
 docker build -t wasim72/first-repository:FirstEurekaServer .
